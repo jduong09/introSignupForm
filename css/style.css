@@ -1,0 +1,155 @@
+/* Designed for mobile */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url('../images/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+
+main {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+
+.introduction {
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  width: 75%;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.introduction > div {
+  color: #FFFFFF;
+}
+
+button {
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 3rem;
+  border: 1px solid hsl(248, 32%, 49%);
+  border-radius: 10px;
+  background: hsl(248, 32%, 49%);
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1.5rem;
+  box-shadow: 0 .5rem rgba(0, 0, 0, 0.185);
+}
+
+button > div {
+  width: 75%;
+  margin: 0 auto;
+}
+
+button strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+form {
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 .5rem rgba(0, 0, 0, 0.185);
+}
+
+form > label {
+  display: block;
+  width: 90%;
+  margin: 0 auto 1rem auto;
+}
+
+.signUpInput {
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: .75rem;
+}
+
+input::placeholder {
+  font-weight: 500;
+}
+
+#submitBtn {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: .6rem 0;
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(154, 59%, 51%);
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0 .25rem hsl(154, 56%, 44%);
+  cursor: pointer;
+}
+
+form > footer {
+  width: 75%;
+  margin: 0 auto;
+  color: #cccccc;
+  font-weight: 500;
+  font-size: .75rem;
+  text-align: center;
+  padding-top: .75rem; 
+}
+
+footer > span {
+  color:hsl(0, 100%, 74%);
+}
+
+@media (min-width: 766px) {
+  body {
+    background-image: url('../images/bg-intro-desktop.png');
+    background-position: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .introduction {
+    flex: 2;
+    padding: 0 2rem 0 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+}
